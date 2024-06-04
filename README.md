@@ -1,1 +1,1 @@
-in the websites folder are images, which are the images i used, and the html code for the websites!
+in the websites folder there are three template websites, with proper keys on how to replace certain variables
