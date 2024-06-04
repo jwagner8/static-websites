@@ -1,0 +1,85 @@
+<!-- Purpose: Blue-print for hotel website 
+all variables to be replaced will be in all bold
+key: image! = replace image with the url
+    title! = replace the title  
+    blurb!: replace the blurb about hotel
+    blurb1!: replace blurb about room(s)
+    roomNum!: replace the number of rooms
+    price!: replace with the price of the flight 
+     -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title><!--title!--></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.room-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<div class="w3-bar w3-white w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>The Grand Hotel</a>
+  <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
+  <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+  <a href="#book" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Book Now</a>
+</div>
+
+<header class="w3-container w3-center">
+  <h1><!--title!--></h1>
+  <p><!--blurb!--></p>
+</header>
+
+<div class="w3-container w3-padding-32" id="rooms">
+  <h2><!--roomNum!--></h2>
+  <!-- <img class="room-image" src="image!"" alt="Single Room"> -->
+  <p><!--blurb1!--></p>
+  <div class="w3-row-padding">
+    <div class="w3-col l6 m6">
+      <h4>Amenities</h4>
+      <ul>
+        <li><i class="fa fa-check-circle w3-text-green"></i> Single bed</li>
+        <li><i class="fa fa-check-circle w3-text-green"></i> Work desk</li>
+        <li><i class="fa fa-check-circle w3-text-green"></i> Flat-screen TV</li>
+        <li><i class="fa fa-check-circle w3-text-green"></i> Free Wi-Fi</li>
+        <li><i class="fa fa-check-circle w3-text-green"></i> Private bathroom</li>
+      </ul>
+    </div>
+    <div class="w3-col l6 m6">
+      <h4><!--price!--></h4>
+      <p class="w3-large">From $99 per night</p>
+      <p><b>Availability:</b> Check in <input type="date" class="w3-input w3-border" style="width:100px"> - Check out <input type="date" class="w3-input w3-border" style="width:100px;"></p>
+      <a href="#book" class="w3-button w3-block w3-red w3-margin-top">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-32" id="about">
+  <h2>About <!--title!--></h2>
+  <p>
+
+    <div class="w3-container w3-padding-32" id="book">
+        <h2>Book Now</h2>
+        <form action="/booking" method="post">  <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Full Name" name="name" required></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" name="email" required></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Phone Number (Optional)" name="phone"></p>
+            <p><b>Check In:</b> <input type="date" class="w3-input w3-border" style="width:150px;" name="check_in" required></p>
+            <p><b>Check Out:</b> <input type="date" class="w3-input w3-border" style="width:150px;" name="check_out" required></p>
+            <p><button class="w3-button w3-block w3-red w3-margin-top" type="submit">Book Now</button></p>
+        </form>
+      </div>
+    </body>
+    </html>
+  
