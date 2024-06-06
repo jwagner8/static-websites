@@ -1,0 +1,60 @@
+<!-- Purpose: Blue-print for flight website 
+all variables to be replaced will be in all bold
+key: image! = replace image with the url
+    title! = replace the title  
+    to!: replace the city to
+    from!: replace the city from
+    adress!: replace with adress
+    travel!: replace with the travel date 
+    return!: replace with the return date
+    airline!: replace with the airline name
+    price!: replace with the price of the flight 
+     -->
+
+
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <title>Blue Sky</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <style>
+       body {font-family: Arial, Helvetica, sans-serif;}
+       .flight-info {
+         background-color: #f1f1f1;
+         padding: 20px;
+         margin: 20px;
+       }
+       .flight-info img {
+         width: 50px;
+         height: 50px;
+         margin-right: 10px;
+       }
+     </style>
+     </head>
+     <body>
+     
+     <div class="w3-container">
+       <h2>Flight Information</h2>
+       <div class="flight-info">
+         <img src="images/bluesky.jpg" alt="Airline Logo">  
+         <p><b>From:</b> Boston</p>
+         <p><b>To:</b> Paris</p>
+         <p><b>Travel Date:</b> Octover 10th 2025</p>
+         <p><b>Travel Return:</b> Octover 25th, 2025<p>
+         <p><b>Airline:</b> Blue Sky</p>
+         <p><b>Price:</b> $1500</p>
+       </div>
+       
+       <h2>Book This Flight</h2>
+       <div class="w3-container w3-margin-top">
+         <form action="/booking" method="post">
+           <button class="w3-button w3-block w3-green w3-margin-top" type="submit">Purchase Now</button>
+           <button class="w3-button w3-block w3-red w3-margin-top" type="button">Report Website</button>
+           </p>
+         </form>
+       </div>
+     
+     </body>
+     </html>

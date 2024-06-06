@@ -1,0 +1,83 @@
+<!-- Purpose: Blue-print for hotel website 
+all variables to be replaced will be in all bold
+key: image! = replace image with the url
+    title! = replace the title  
+    blurb!: replace the blurb about hotel
+    blurb1!: replace blurb about room(s)
+    roomNum!: replace the number of rooms
+    price!: replace with the price of the flight 
+     -->
+
+
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <title>Middle Town Hotels</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+     .room-image {
+       width: 100%;
+       height: 300px;
+       object-fit: cover;
+     }
+     </style>
+     </head>
+     <body class="w3-light-grey">
+     
+     <div class="w3-bar w3-white w3-large">
+       <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i><!--title!--></a>
+       <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Room</a>
+       <a href="#book" class="w3-bar-item w3-button w3-mobile">Book Now</a>
+     </div>
+     
+     <header class="w3-container w3-center">
+       <h1>Middle Town Hotels</h1>
+       <p>With its prime location in Midtown Manhattan, this sleek and sophisticated hotel offers convenience, comfort, and contemporary elegance for business and leisure travelers alike.
+    </p>
+     </header>
+     
+     <div class="w3-container w3-padding-32" id="rooms">
+       <h2>505</h2>
+       <p>Balcony Access, with a beautiful view!
+    </p>
+       <div class="w3-row-padding">
+         <div class="w3-col l6 m6">
+           <h4>Amenities</h4>
+           <ul>
+             <li><i class="fa fa-check-circle w3-text-green"></i> Single bed</li>
+             <li><i class="fa fa-check-circle w3-text-green"></i> Work desk</li>
+             <li><i class="fa fa-check-circle w3-text-green"></i> Flat-screen TV</li>
+             <li><i class="fa fa-check-circle w3-text-green"></i> Free Wi-Fi</li>
+             <li><i class="fa fa-check-circle w3-text-green"></i> Private bathroom</li>
+           </ul>
+         </div>
+         <div class="w3-col l6 m6">
+           <h4>The price of the room is <!--price!-->!</h4>
+           <img class="room-image" src="images/midtown.jpg" alt="Single Room"> 
+           <p class="w3-large"><!--title!--></p>
+         </div>
+       </div>
+     </div>
+     
+     <div class="w3-container w3-padding-32" id="about">
+       <h2>About Middle Town Hotels</h2>
+       <p>With its prime location in Midtown Manhattan, this sleek and sophisticated hotel offers convenience, comfort, and contemporary elegance for business and leisure travelers alike.
+    </p>
+     
+         <div class="w3-container w3-padding-32" id="book">
+           <h2>Purchase Now</h2>
+           <form action="/booking" method="post">
+             <button class="w3-button w3-block w3-green w3-margin-top" type="submit">Purchase Now</button>
+             <button class="w3-button w3-block w3-red w3-margin-top" type="button">Report Website</button>
+           </p>
+         </form>
+       </div>
+         </body>
+         </html>
+       
+     

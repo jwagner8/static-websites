@@ -20,8 +20,8 @@ body, html {height: 100%}
 .w3-display-middle {
   text-align: center; /* Center text in the middle section */
 }
-.menu-button, .contact-button {
-  margin: 0 10px; /* Add spacing between menu and contact buttons */
+.menu-button, .reserve-button {
+  margin: 0 10px; /* Add spacing between menu and reserve buttons */
 }
 
 /* Outlined Text Styling */
@@ -54,7 +54,7 @@ body, html {height: 100%}
     </div>
     <div class="w3-display-topleft w3-container w3-xlarge">
       <p><button class="w3-button w3-black menu-button" onclick="document.getElementById('menu').style.display='block'">Menu</button></p>
-      <p><button class="w3-button w3-black contact-button" onclick="document.getElementById('contact').style.display='block'">Contact</button></p>
+      <p><button class="w3-button w3-black reserve-button" onclick="document.getElementById('reserve').style.display='block'">Reserve</button></p>
     </div>
     <div class="w3-display-bottomleft w3-container">
       <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
@@ -97,25 +97,26 @@ body, html {height: 100%}
   </div>
 </div>
 
-<!-- Contact Modal -->
-<div id="contact" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
-      <div class="w3-container w3-black">
-        <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-        <h1>Contact</h1>
-      </div>
-      <div class="w3-container">
-        <p>Reserve a table, ask for today's special or just send us a message:</p>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-          <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
-        </form>
-      </div>
+<!-- Reserve Modal -->
+<div id="reserve" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('reserve').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Reserve</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button w3-green" type="submit">Reserve Now</button></p>
+        <p><button class="w3-button w3-red" type="submit">Report Website</button></p>
+        
+      </form>
     </div>
   </div>
+</div>
   
   </body>
   </html>
